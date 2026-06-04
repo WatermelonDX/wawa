@@ -131,8 +131,9 @@ int contar_amigos_mutuos(int n, int amistades[][2], int m, int persona_a, int pe
     
     int amigos_a[MAX_PERSONAS];
     int amigos_b[MAX_PERSONAS];
-    int conteo_a = 0; // Usar obtener_amigos() para poblar
-    int conteo_b = 0; // Usar obtener_amigos() para poblar
+    int conteo_a =  obtener_amigos(amistades, m, persona_a, amigos_a);
+    int conteo_b =  obtener_amigos(amistades, m, persona_b, amigos_b);
+    
     
     int conteo_mutuo = 0;
     
